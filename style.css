@@ -154,11 +154,12 @@ main .s1 .s1TopContent, main .s1 .s1BottomContent{
 
 main .s2{
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 30px;
 }
 main .s2 .s2Box1{
     width: 1000px;
@@ -207,7 +208,7 @@ main .s2 .s2Box1 p{
 main .s2 .s2Box2{
     display: flex;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 main .s2 .s2Box2 div{
     width: 250px;
@@ -221,4 +222,108 @@ main .s2 .s2Box2 div p{
     color: #FFFFFF;
     font-family: "Montserrat", sans-serif;
     margin-top: 20px;
+}
+
+main .s3{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+main .s3 div h1{
+    color: #FFFFFF;
+    font-family: "Exo 2", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    padding-bottom: 10px;
+    position: relative;
+    display: inline;
+    left: -430px;
+    top: -50px;
+}
+main .s3 div h1::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    bottom: 0px;
+    left: 0;
+    background: linear-gradient(to right, #121212, #FFCD1C, #121212);
+}
+main .s3 .s3MainBox{
+    display: flex;
+    align-items: center;
+    gap: 0px 30px;
+}
+main .s3 .s3MainBox div{
+    width: 180px;
+    position: relative;
+}
+main .s3 .s3MainBox h2{
+    color: #FFCD1C;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+main .s3 .s3MainBox p{
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 10px;
+}
+main .s3 .s3MainBox img{
+    transform: translateX(70%);
+    position: absolute;
+}
+
+main .s3 .s3MainBox .miniBox{
+    width: 100%;
+    height: 400px;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+}
+main .s3 .s3MainBox .miniBox::before{
+    padding-top: 120px;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #1212129c;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+main .s3 .s3MainBox .miniBox p{
+    z-index: 2;
+    position: relative;
+}
+main .s3 .miniBox1{
+    background-image: url(images/pic1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+main .s3 .miniBox2{
+    background-image: url(images/pic2.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: translateY(10%);
+}
+main .s3 .miniBox3{
+    background-image: url(images/pic3.png);
+    background-position: center;
+    background-size: cover;
+}
+main .s3 .miniBox4{
+    background-image: url(images/pic4.png);
+    background-position: center;
+    background-size: cover;
+    transform: translateY(10%);
+}
+main .s3 .miniBox5{
+    background-image: url(images/pic5.jpg);
+    background-position: center;
+    background-size: cover;
 }
