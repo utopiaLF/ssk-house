@@ -96,7 +96,7 @@ main .s1 .s1TopContent{
 }
 main .s1 .s1TopContent h1{
     color: #FFFFFF;
-    font-size: 60px;
+    font-size: 55px;
     font-family: "Exo 2", sans-serif;
     font-weight: 500;
 }
@@ -115,7 +115,7 @@ main .s1 .s1TopContent button{
     background-color: #FFCD1C;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-top: 40px;
     border-radius: 15px;
     border: none;
