@@ -41,6 +41,11 @@ header nav ul li, header span p{
 header nav ul li{
     margin: 0px 20px;
     font-size: 0.9rem;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+header nav ul li:hover{
+    color: #FFCD1C;
 }
 header span p{
     margin-right: 30px;
@@ -62,6 +67,7 @@ header span button{
     color: #FFFFFF;
     outline: 1px solid #FFCD1C;
     border-radius: 15px;
+    cursor: pointer;
 }
 main{
     width: 100%;
@@ -120,6 +126,7 @@ main .s1 .s1TopContent button{
     margin-top: 40px;
     border-radius: 15px;
     border: none;
+    cursor: pointer;
 }
 main .s1 .s1BottomContent{
     width: 1000px;
@@ -135,6 +142,7 @@ main .s1 .s1BottomContent div{
     padding: 20px;
     border-radius: 30px;
     box-shadow: 1px 1px 1px 0px #FFCD1C;
+    cursor: help;
 }
 main .s1 .s1BottomContent div h2{
     color: #FFCD1C;
@@ -180,6 +188,7 @@ main .s2 .s2Box1 figure{
     background-size: cover;
     border-radius: 30px;
     margin-left: 100px;
+    cursor: all-scroll;
 }
 main .s2 .s2Box1 h1{
     color: #FFFFFF;
@@ -189,6 +198,7 @@ main .s2 .s2Box1 h1{
     padding-bottom: 10px;
     position: relative;
     display: inline;
+    cursor:help;
 }
 main .s2 .s2Box1 h1::after{
     position: absolute;
@@ -213,6 +223,7 @@ main .s2 .s2Box2{
 main .s2 .s2Box2 div{
     width: 250px;
     height: 70px;
+    cursor: help;
 }
 main .s2 .s2Box2 div i{
     color: #FFCD1C;
@@ -243,6 +254,7 @@ main .s3 div h1{
     display: inline;
     left: -430px;
     top: -50px;
+    cursor: help;
 }
 main .s3 div h1::after{
     position: absolute;
@@ -261,6 +273,7 @@ main .s3 .s3MainBox{
 main .s3 .s3MainBox div{
     width: 180px;
     position: relative;
+    cursor: help;
 }
 main .s3 .s3MainBox h2{
     color: #FFCD1C;
@@ -284,6 +297,7 @@ main .s3 .s3MainBox .miniBox{
     padding: 20px;
     border-radius: 15px;
     position: relative;
+    cursor: pointer;
 }
 main .s3 .s3MainBox .miniBox::before{
     padding-top: 120px;
@@ -326,4 +340,106 @@ main .s3 .miniBox5{
     background-image: url(images/pic5.jpg);
     background-position: center;
     background-size: cover;
+}
+
+main .s4{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+main .s4 h1{
+    color: #FFFFFF;
+    font-family: "Exo 2", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    padding-bottom: 10px;
+    position: relative;
+    display: inline;
+    cursor:help;
+}
+main .s4 h1::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    bottom: 0px;
+    left: 0;
+    background: linear-gradient(to right, #121212, #FFCD1C, #121212);
+}
+
+main .s5{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+main .s5 h1{
+    color: #FFFFFF;
+    font-family: "Exo 2", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    padding-bottom: 10px;
+    position: relative;
+    display: inline;
+    cursor:help;
+}
+main .s5 h1::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    bottom: 0px;
+    left: 0;
+    background: linear-gradient(to right, #121212, #FFCD1C, #121212);
+}
+main .s5 .questions{
+    width: 70%;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+main .s5 .questions .queBox{
+    width: 500px;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    outline: 2px solid #FFCD1C;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: max-content;
+}
+main .s5 .questions .queBox .que{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #121212;
+}
+main .s5 .questions .queBox h2{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+main .s5 .questions .queBox h3{
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+main .s5 .questions .queBox .answer{
+    transform: scale(0);
+    transition: transform 0.8s ease, height 0.3s;
+    height: 0px;
+}
+main .s5 .questions .queBox .answer.active{
+    transform: scale(1);
+    height: max-content;
 }
