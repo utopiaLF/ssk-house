@@ -243,6 +243,7 @@ main .s3{
     justify-content: center;
     align-items: center;
     padding: 30px;
+    overflow: hidden;
 }
 main .s3 div h1{
     color: #FFFFFF;
@@ -360,6 +361,8 @@ main .s4 h1{
     position: relative;
     display: inline;
     cursor:help;
+    left: -380px;
+    top: -50px;
 }
 main .s4 h1::after{
     position: absolute;
@@ -369,6 +372,35 @@ main .s4 h1::after{
     bottom: 0px;
     left: 0;
     background: linear-gradient(to right, #121212, #FFCD1C, #121212);
+}
+main .s4 .gallery{
+    width: 1000px;
+    height: 70vh;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px 0px;
+}
+main .s4 .gallery div{
+    /* outline: 2px solid #FFCD1C; */
+}
+main .s4 .gallery div img{
+    width: 100%;
+    height: 100%;
+}
+main .s4 .gallery div:nth-child(1){
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+main .s4 .gallery div:nth-child(2){
+    grid-column: 4 / span 2;
+    grid-row: 1;
+    background-color: #FFFFFF;
+}
+main .s4 .gallery div:nth-child(n+3){
+    grid-column: auto;
+    grid-row: 2;
+    margin: 0px 5px;
 }
 main .s4 .s4MainBox{
     width: 70%;
@@ -470,4 +502,181 @@ main .s5 .questions .queBox .answer.active{
     transform: scale(1);
     opacity: 1;
     height: 140px;
+}
+
+main .s6{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    overflow: hidden;
+}
+main .s6 div{
+    width: 80%;
+    height: 80%;
+    background-image: url(images/house_pic.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+main .s6 div::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #12121252;
+}
+main .s6 div h1{
+    font-family: "Exo 2", sans-serif;
+    color: #FFFFFF;
+    font-size: 50px;
+    z-index: 2;
+}
+main .s6 div button{
+    z-index: 2;
+    width: 280px;
+    height: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    background-color: #FFCD1C;
+    border: none;
+    color: #121212;
+    outline: 1px solid #FFCD1C;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+main .s7{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    overflow: hidden;
+}
+main .s7 .s7Box{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .s7 .s7Box .form_pic{
+    width: 40%;
+    height: 100%;
+    background-image: url(images/form_pic.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+}
+main .s7 .s7Box .formBox{
+    width: 55%;
+    height: 100%;
+    background-color: #4545454D;
+    margin-left: 30px;
+    border-radius: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+main .s7 .s7Box .formBox h1{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+main .s7 .s7Box .formBox form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .s7 .s7Box .formBox form input{
+    width: 80%;
+    height: 40px;
+    border: 2px solid grey;
+    background-color: transparent;
+    outline: none;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+main .s7 .s7Box .formBox form textarea{
+    min-width: 80%;
+    max-width: 80%;
+    height: 80px;
+    border: 2px solid grey;
+    background-color: transparent;
+    outline: none;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+main .s7 .s7Box .formBox form button{
+    width: 250px;
+    height: 45px;
+    background-color: #FFCD1C;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    height: max-content;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px dashed #FFCD1C;
+}
+footer span p, footer nav a, footer span a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+footer nav, footer span{
+    display: flex;
+    flex-direction: column;
+}
+footer span a{
+    margin-top: 40px;
+}
+footer nav a{
+    margin-bottom: 10px;
+}
+footer span button{
+    margin-top: 20px;
+}
+footer span .fBtn1{
+    width: 200px;
+    height: 45px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #121212;
+    border: none;
+    color: #FFFFFF;
+    outline: 1px solid #FFCD1C;
+    border-radius: 15px;
+    cursor: pointer;
+}
+footer span .fBtn2{
+    width: 200px;
+    height: 45px;
+    background-color: #FFCD1C;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
 }
