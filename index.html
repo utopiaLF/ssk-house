@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>SSK House</title>
 </head>
 <body>
@@ -160,10 +161,34 @@
             <div>
                 <h1>Наши работы</h1>
             </div>
-            <div>
-                <div>
-                    <figure></figure>
+            <div class="swiper mySwiper s4SwiperBox">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swBox">
+                        <p>Вариант проекта, коттедж загородный.
+                            Комфортабельный двух-этажный дом
+                            с гаражом и оригинальной отделкой.
+                            Гостиная, кухня, с выходом в сад.
+                            Пять спален на втором этаже</p>
+                    </div>
+                    <div class="swiper-slide swBox">
+                        <img src="images/house1.jpg" alt="House">
+                    </div>
+                    <div class="swiper-slide swBox">
+                        <img src="images/house2.jpg" alt="House">
+                    </div>
+                    <div class="swiper-slide swBox">
+                        <img src="images/house3.jpg" alt="House">
+                    </div>
+                    <div class="swiper-slide swBox">
+                        <img src="images/house4.jpg" alt="House">
+                    </div>
+                    <div class="swiper-slide swBox">
+                        <img src="images/house5.jpg" alt="House">
+                    </div>
                 </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
             </div>
         </section>
 
@@ -172,69 +197,73 @@
                 <h1>Часто задаваемые вопросы</h1>
             </div>
             <div class="questions">
-                <div class="queBox" id="que">
-                    <div class="que">
-                        <h2>Какой порядок оплаты ?</h2>
-                        <i class="fa-solid fa-angle-down"></i>
+                <div class="queLine">
+                    <div class="queBox" id="que">
+                        <div class="que">
+                            <h2>Какой порядок оплаты ?</h2>
+                            <i class="fa-solid fa-angle-down downAngle"></i>
+                        </div>
+    
+                        <div class="answer" id="ans">
+                            <h3>Оплачивать можно поэтапно или после приемки 
+                                выполненных работ. Оплата по этапам производится
+                                по согласованию. Например, черновая и чистовая
+                                отделка или одна комната, затем другая.</h3>
+                        </div>
                     </div>
-
-                    <div class="answer" id="ans">
-                        <h3>Оплачивать можно поэтапно или после приемки 
-                            выполненных работ. Оплата по этапам производится
-                            по согласованию. Например, черновая и чистовая
-                            отделка или одна комната, затем другая.</h3>
+                    <div class="queBox">
+                        <div class="que">
+                            <h2>Когда готовы приступить к работе ?</h2>
+                            <i class="fa-solid fa-angle-down downAngle"></i>
+                        </div>
+    
+                        <div class="answer">
+                            <h3>Оплачивать можно поэтапно или после приемки 
+                                выполненных работ. Оплата по этапам производится
+                                по согласованию. Например, черновая и чистовая
+                                отделка или одна комната, затем другая.</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="queBox">
-                    <div class="que">
-                        <h2>Когда готовы приступить к работе ?</h2>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-
-                    <div class="answer">
-                        <h3>Оплачивать можно поэтапно или после приемки 
-                            выполненных работ. Оплата по этапам производится
-                            по согласованию. Например, черновая и чистовая
-                            отделка или одна комната, затем другая.</h3>
-                    </div>
-                </div>
-                <div class="queBox">
-                    <div class="que">
-                        <h2>В какой срок будут выполнены работы ?</h2>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-
-                    <div class="answer">
-                        <h3>Оплачивать можно поэтапно или после приемки 
-                            выполненных работ. Оплата по этапам производится
-                            по согласованию. Например, черновая и чистовая
-                            отделка или одна комната, затем другая.</h3>
-                    </div>
-                </div>
-                <div class="queBox">
-                    <div class="que">
-                        <h2>Входит ли в стоимость материалы ?</h2>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-
-                    <div class="answer">
-                        <h3>Оплачивать можно поэтапно или после приемки 
-                            выполненных работ. Оплата по этапам производится
-                            по согласованию. Например, черновая и чистовая
-                            отделка или одна комната, затем другая.</h3>
+                    <div class="queBox">
+                        <div class="que">
+                            <h2>В какой срок будут выполнены работы ?</h2>
+                            <i class="fa-solid fa-angle-down downAngle"></i>
+                        </div>
+    
+                        <div class="answer">
+                            <h3>Оплачивать можно поэтапно или после приемки 
+                                выполненных работ. Оплата по этапам производится
+                                по согласованию. Например, черновая и чистовая
+                                отделка или одна комната, затем другая.</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="queBox">
-                    <div class="que">
-                        <h2>Беретесь ли за мелкий ремонт ?</h2>
-                        <i class="fa-solid fa-angle-down"></i>
+                <div>
+                    <div class="queBox">
+                        <div class="que">
+                            <h2>Входит ли в стоимость материалы ?</h2>
+                            <i class="fa-solid fa-angle-down downAngle"></i>
+                        </div>
+    
+                        <div class="answer">
+                            <h3>Оплачивать можно поэтапно или после приемки 
+                                выполненных работ. Оплата по этапам производится
+                                по согласованию. Например, черновая и чистовая
+                                отделка или одна комната, затем другая.</h3>
+                        </div>
                     </div>
-
-                    <div class="answer">
-                        <h3>Оплачивать можно поэтапно или после приемки 
-                            выполненных работ. Оплата по этапам производится
-                            по согласованию. Например, черновая и чистовая
-                            отделка или одна комната, затем другая.</h3>
+                    <div class="queBox">
+                        <div class="que">
+                            <h2>Беретесь ли за мелкий ремонт ?</h2>
+                            <i class="fa-solid fa-angle-down downAngle"></i>
+                        </div>
+    
+                        <div class="answer">
+                            <h3>Оплачивать можно поэтапно или после приемки 
+                                выполненных работ. Оплата по этапам производится
+                                по согласованию. Например, черновая и чистовая
+                                отделка или одна комната, затем другая.</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -242,5 +271,24 @@
     </main>
 
     <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            cssMode: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+    </script>
 </body>
 </html>

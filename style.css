@@ -370,6 +370,24 @@ main .s4 h1::after{
     left: 0;
     background: linear-gradient(to right, #121212, #FFCD1C, #121212);
 }
+main .s4 .s4MainBox{
+    width: 70%;
+    height: 50vh;
+    border-radius: 30px;
+}
+main .s4 .s4MainBox .swiperBox{
+    width: 100%;
+    height: 70vh;
+}
+.s4SwiperBox{
+    width: 70%;
+    height: 60vh;
+    border-radius: 15px;
+}
+.s4SwiperBox div .swBox img{
+    width: 100%;
+}
+
 
 main .s5{
     width: 100%;
@@ -383,12 +401,13 @@ main .s5{
 main .s5 h1{
     color: #FFFFFF;
     font-family: "Exo 2", sans-serif;
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: 400;
     padding-bottom: 10px;
     position: relative;
     display: inline;
     cursor:help;
+    left: -40%;
 }
 main .s5 h1::after{
     position: absolute;
@@ -416,9 +435,11 @@ main .s5 .questions .queBox{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: max-content;
+    margin-top: 30px;
+    transition: all 0.3s;
 }
 main .s5 .questions .queBox .que{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -428,6 +449,9 @@ main .s5 .questions .queBox h2{
     font-weight: 400;
     font-size: 1.3rem;
 }
+main .s5 .questions .queBox .que .downAngle.active{
+    transform: rotate(180deg);
+}
 main .s5 .questions .queBox h3{
     font-weight: 500;
     margin-top: 20px;
@@ -435,11 +459,15 @@ main .s5 .questions .queBox h3{
 }
 
 main .s5 .questions .queBox .answer{
+    width: 100%;
     transform: scale(0);
-    transition: transform 0.8s ease, height 0.3s;
-    height: 0px;
+    transform-origin: top;
+    opacity: 0;
+    height: 0;
+    transition: opacity 0.1s ease, transform 0.4s ease, height 0.5s;
 }
 main .s5 .questions .queBox .answer.active{
     transform: scale(1);
-    height: max-content;
+    opacity: 1;
+    height: 140px;
 }
