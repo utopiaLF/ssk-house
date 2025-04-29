@@ -680,3 +680,139 @@ footer span .fBtn2{
     border: none;
     cursor: pointer;
 }
+
+@media(max-width: 768px){
+    .menu i{
+        color: #FFFFFF;
+        font-size: 1.2rem;
+    }
+    header{
+        justify-content: space-around;
+    }
+    header ul{
+        flex-direction: column;
+        position: absolute;
+        top: -100%;
+    }
+    header span:nth-child(1){
+        /* display: none; */
+    }
+    header span:nth-child(2){
+        /* margin-left: 0; */
+    }
+    header span p{
+        display: none;
+    }
+    header span button{
+        margin-right: 30px;
+    }
+
+    main .s1{
+        height: max-content;
+    }
+    main .s1 .s1TopContent{
+        width: 80%;
+        margin-top: 10%;
+    }
+    main .s1 .s1TopContent h1{
+        font-size: 2.2rem;
+    }
+    main .s1 .s1TopContent p{
+        font-size: 1rem;
+    }
+    main .s1 .s1TopContent button{
+        font-size: 1rem;
+        margin-top: 20%;
+    }
+    main .s1 .s1BottomContent{
+        flex-direction: column;
+    }
+    main .s1 .s1BottomContent div{
+        margin-top: 20px;
+    }
+    main .s2 .s2Box1{
+        width: 100%;
+        flex-direction: column;
+    }
+    main .s2 .s2Box1 div{
+        width: 100%;
+    }
+    main .s2 .s2Box1 figure{
+        display: none;
+    }
+    main .s2 .s2Box1 h1{
+        font-size: 2rem;
+    }
+    main .s2 .s2Box2{
+        flex-direction: column;
+    }
+    main .s2 .s2Box2 div{
+        height: 50px;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+    }
+    main .s2 .s2Box2 div p{
+        margin-top: 0;
+        margin-left: 10px;
+    }
+
+    main .s3{
+        height: max-content;
+    }
+    main .s3 .s3MainBox{
+        width: 100%;
+        height: max-content;
+        gap: 0px;
+        flex-direction: column;
+    }
+    main .s3 .s3MainBox div{
+        width: 100%;
+        overflow: hidden;
+        height: max-content;
+        border-radius: 20px;
+    }
+    main .s3 .s3MainBox .topBox{
+        display: none;
+    }
+    main .s3 .s3MainBox .miniBox{
+        margin-top: 20px;
+        width: 100%;
+        height: max-content;
+        border-radius: 15px;
+        overflow: hidden;
+        transform: translateY(0);
+    }
+
+    main .s4{
+        height: max-content;
+        display: none;
+    }
+    main .s5 h1{
+        font-size: 2rem;
+        left: 0;
+    }
+    main .s5 .questions{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+        margin-top: 30px;
+    }
+    main .s5 .questions .queBox{
+        width: 100%;
+        margin-top: 20px;
+    }
+    main .s5 .questions .queBox h2{
+        font-size: 0.9rem;
+    }
+    main .s5 .questions .queBox h3{
+        font-size: 0.9rem;
+    }
+    main .s5 .questions .queBox .answer.active{
+        height: 170px;
+    }
+
+    main .s6, main .s7, footer{
+        display: none;
+    }
+}
