@@ -1,3 +1,13 @@
+let menuBar = document.getElementById('menu-bar');
+// let menuClose = document.getElementById('menuClose');
+const menuBtn = document.getElementById('menuBtn');
+
+
+menuBtn.addEventListener('click', ()=>{
+    menuBar.classList.toggle('active');
+    menuBtn.classList.toggle('active');
+});
+
 let que = document.querySelectorAll('.que')
 let ans = document.querySelectorAll('.answer')
 let thatIcon = document.querySelectorAll('.downAngle');
