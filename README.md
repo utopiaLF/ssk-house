@@ -1,16 +1,13 @@
-# SSK House
+# SSK-HOUSE
 
-## Single-page website for house building company
+**Landing page for a construction company. Responsive and clean**
 
-** A modern and responsive single-page website designed to showcase the services of a house-building company. This project focuses on clean design, user-friendly navigation, and an elegant layout **
+## Tech Stack:
+ - **HTML**
+ - **CSS**
+ - **Vanilla JavaScript**
 
-<hr>
+#### **Live Demo: https://utopialf.github.io/ssk-house**
+<br>
 
-## Technologies Used
-
- - HTML
- - CSS
- - JavaScript
-
-# Demo
- * URL [https://utopialf.github.io/ssk-house/]
+**This project is licensed under the [MIT License](./LICENSE). Have fun!**
